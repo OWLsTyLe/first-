@@ -6,7 +6,7 @@ class Category(models.Model):
     pud_text = models.TextField('Введіть текст', max_length=10000)
     pub_date = models.DateTimeField('date published')
     def  __str__(self):
-        return self.title
+        return self.name_you
     class Meta:
         verbose_name = 'Додати'
         verbose_name_plural = 'Додати'
