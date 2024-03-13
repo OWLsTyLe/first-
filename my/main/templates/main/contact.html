@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} my {% endblock %}
+
+{% block content %}
+    <h1>tyt</h1>
+
+        {% for el in ads %}
+            <div class="colour colour-red">
+                <h3>{{ el.name_you }}</h3>
+                <p>{{ el.pud_text }}</p>
+            </div>
+        {% endfor %}
+
+{% endblock %}
