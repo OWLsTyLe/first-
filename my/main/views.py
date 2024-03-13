@@ -8,5 +8,7 @@ def about(request):
     return render(request, 'main/about.html')
 
 def contact(request):
-    return render(request, 'main/contact.html')
+    ads = Category.objects.all()
+    return render(request, 'main/contact.html', {'ads': ads})
+
 
