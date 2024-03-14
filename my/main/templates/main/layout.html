@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,9 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <aside>
+        <img src="{% static 'main/img/IMG_1026.JPG' %}" alt="">
+        <span class="logo"> start </span>
+        <h3>navigation</h3>
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> golovna</a></li>
+            <li><a href=""><i class="fas fa-user"></i> me</a></li>
+            <li><a href=""><i class="fas fa-newspaper"></i> news</a></li>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
