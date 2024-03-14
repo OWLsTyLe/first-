@@ -1,0 +1,42 @@
+body{
+    background: azure;
+}
+
+aside{
+    float: left;
+    width: 20%;
+    border-right: 2px solid gray;
+    height: 100vh;
+}
+
+aside img{
+    float: left;
+    width: 200px;
+}
+
+aside .logo{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: -100px;
+    color: purple;
+}
+
+h3  {
+    color: brown;
+    font-size: 50px;
+}
+
+aside ul {list-style: none;}
+aside ul li a{
+    color: brown;
+    display: block;
+    margin-top: 20px;
+    transition: all .8s ease;
+}
+aside ul li:hover, aside ul a:hover{
+    color: brown;
+    text-decoration: none;
+    transform: scale(1.06);
+
+}
