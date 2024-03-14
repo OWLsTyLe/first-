@@ -2,8 +2,8 @@ body{
     background: azure;
 }
 
-aside{
-    float: left;
+aside .block{
+    display: block;
     width: 20%;
     border-right: 2px solid gray;
     height: 100vh;
