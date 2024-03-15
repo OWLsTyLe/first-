@@ -3,40 +3,46 @@ body{
 }
 
 aside .block{
-    display: block;
     width: 20%;
-    border-right: 2px solid gray;
     height: 100vh;
+    border-right: 2px solid gray;
+    display: flex;
 }
 
 aside img{
     float: left;
     width: 200px;
 }
-
+h1 .first{
+    text-align: center;
+}
 aside .logo{
     font-size: 20px;
     font-weight: bold;
-    position: relative;
     bottom: -100px;
     color: purple;
+
 }
 
-h3  {
-    color: brown;
+h3 {
+    color: black;
     font-size: 50px;
+    text-align: center;
 }
 
-aside ul {list-style: none;}
+aside ul {list-style: none;  display: flex; }
 aside ul li a{
     color: brown;
     display: block;
     margin-top: 20px;
     transition: all .8s ease;
+    text-align: center;
+    padding-left: 80px;
 }
 aside ul li:hover, aside ul a:hover{
     color: brown;
     text-decoration: none;
     transform: scale(1.06);
+
 
 }
