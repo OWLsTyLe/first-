@@ -1,48 +1,60 @@
 body{
-    background: azure;
+    background: white;
 }
 
-aside .block{
+aside ul .block{
     width: 20%;
     height: 100vh;
-    border-right: 2px solid gray;
     display: flex;
+    max-width: 100%;
+    color: black;
 }
 
-aside img{
-    float: left;
-    width: 200px;
-}
-h1 .first{
-    text-align: center;
-}
-aside .logo{
-    font-size: 20px;
-    font-weight: bold;
-    bottom: -100px;
-    color: purple;
-
-}
 
 h3 {
     color: black;
     font-size: 50px;
     text-align: center;
+
 }
 
-aside ul {list-style: none;  display: flex; }
-aside ul li a{
-    color: brown;
-    display: block;
+aside ul {list-style: none;  display: flex;}
+aside ul li a {
+    color: white;
     margin-top: 20px;
     transition: all .8s ease;
     text-align: center;
     padding-left: 80px;
+
 }
 aside ul li:hover, aside ul a:hover{
-    color: brown;
+    color: white;
     text-decoration: none;
     transform: scale(1.06);
 
+}
+.alert-warning{
+    text-decoration: black;
+    text-align: left;
+    margin: 25px 30%;
+    clear: both;
+}
+.black-rectangle {
+    margin-top: 60px;
+    background-color: dimgrey;
+    padding: 9px;
+}
+.gray-rectangle{
+    background-color: #f1f1f1;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.white-rectangle{
+    margin-left: 250px;
+    margin-top: 20px;
+    line-height: 2;
+}
+.style{
 
 }
