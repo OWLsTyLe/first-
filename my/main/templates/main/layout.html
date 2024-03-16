@@ -13,14 +13,15 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/IMG_1026.JPG' %}" alt="">
+        <img src="" alt="">
         <span class="logo"> </span>
-        <h3>navigation</h3>
-        <ul>
-            <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> golovna</a></li>
-            <li><a href="{% url 'about' %}"><i class="fas fa-user"></i> me</a></li>
-            <li><a href="{% url 'contact' %}"><i class="fas fa-newspaper"></i> news</a></li>
-        </ul>
+            <div class="black-rectangle">
+                <ul class="block">
+                    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
+                    <li><a href="{% url 'about' %}"><i class="fas fa-user"></i> CSS</a></li>
+                    <li><a href="{% url 'contact' %}"><i class="fas fa-newspaper"></i> HTML</a></li>
+                </ul>
+            </div>
     </aside>
     <main>
         {% block content %}{% endblock %}
