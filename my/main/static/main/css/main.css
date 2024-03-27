@@ -59,10 +59,46 @@ aside ul li:hover, aside ul a:hover{
     width: 15%;
     border-collapse: collapse;
     margin-left: 15px;
+    border-radius: 0px 0px 30px 30px;
+    text-decoration-color: #be8683;
 }
 .first_table th, .first_table td{
     padding: 15px;
     text-align: left;
-    border: 0.5px dimgrey;
-    border-radius: 0px 0px 30px 30px;
+    border: 0.5px solid dimgrey;
+    margin-top: 100px;
+}
+.graytwo-rectangle{
+    margin-top: 600px;
+    height:160px;
+}
+.words{
+    position: absolute;
+    top: 1450px;
+    right: 500px;
+}
+.word{
+    position: absolute;
+    top: 1450px;
+    right: 200px;
+}
+.lis{
+    position: absolute;
+    top: 1500px;
+    right: 580px;
+}
+.lik{
+    position: absolute;
+    top: 1500px;
+    right: 265px;
+}
+.lik1{
+    position: absolute;
+    top: 1515px;
+    right: 232px;
+}
+.lik2{
+    position: absolute;
+    top: 1530px;
+    right: 140px;
 }
