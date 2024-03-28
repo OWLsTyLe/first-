@@ -3,20 +3,22 @@
 {% block title %} Український веб довідник {% endblock %}
 
 {% block content %}
-<div class="gray-rectangle">
-    <p style="line-height: 2;" ><b style="font-size: 30px;">Український веб-довідник</b><br>
-    Веб-довідник створено, щоб допомогти Вам здобути нові знання, а також ефективніше використовувати вже.<br>
-    Його мета - щоб будь-хто з легкістю зміг увійти в світ веб-розробки та без проблем створив свій перший сайт!<br>
-    Ми та наші друзі - пул українського співтовариства, котрий буде постійно працювати, задля покращення українського сегменту інтернету та виведення його з теперішнього, незадовільного, стану. Тому, всі ми відкриті для нових ідей і готові до глобальних змін!<br>
-    <br>
+<aside class="whit-rec">
+     <p style="margin-left: 950px; position: absolute; top:440px;"> <b style="font-size: 25px;">CSS приклад:</b></p>
+    <div class="gray-rectangle">
+        <p style="line-height: 2; font-size: 14.5px" ><b style="font-size: 30px;">Український веб-довідник</b><br>
+        Веб-довідник створено, щоб допомогти Вам здобути нові знання, а також ефективніше використовувати вже.<br>
+        Його мета - щоб будь-хто з легкістю зміг увійти в світ веб-розробки та без проблем створив свій перший сайт!<br>
+        Ми та наші друзі - пул українського співтовариства, котрий буде постійно працювати, задля покращення українського сегменту інтернету та виведення його з теперішнього, незадовільного, стану. Тому, всі ми відкриті для нових ідей і готові до глобальних змін!<br>
+        <br>
     Сьогодні, Ви можете дізнатися про наступні технології:
-    </p>
-</div>
-
-<div class="o-rectangle">
+        </p>
+    </div>
+</aside>
+<div>
     <p style="text-align: right;">  </p>
     <div class="white-rectangle">
-        <p style="line-height: 2;"> <b style="font-size: 30px;"> CSS </b> <br>
+        <p style="line-height: 2; font-size: 14.5px;"> <b style="font-size: 30px;"> CSS </b> <br>
     Каскадні таблиці стилів (англ. Cascading Style Sheets - CSS). <br>
     Мова для запису стильового оформлення.<br>
     Колір тла, розмір літер та найрізноманітніші візуальні ефекти створюються за допомогою.
@@ -29,7 +31,7 @@
 <hr style="margin-left: 250px; margin-top: 100px">
 
     <div class="white-rectangle">
-        <p style="line-height: 2;" > <b style="font-size: 30px;">HTML</b> <br>
+        <p style="line-height: 2; font-size: 14.5px;" > <b style="font-size: 30px;">HTML</b> <br>
         Мова розмітки гіпертексту (англ. HyperText Markup Language - HTML).<br>
         Основна мова для опису змісту веб-сторінок. <br>
         Посилання, параграфи, форми та інші елементи веб-сторінки створюються за допомогою HTML.
@@ -41,13 +43,13 @@
 
 <hr style="margin-left: 250px; margin-top: 100px">
 
-    <div class="white-rectangle"> <p> <b style="font-size: 30px;" > JS </b> <br>
+    <div class="white-rectangle"> <p style="font-size: 14.5px;"> <b style="font-size: 30px;" > JS </b> <br>
         JavaScript (скорочено - JS) - це високорівнева мова програмування, яка використовується для надання динамічної поведінки веб-сторінкам. Дозволяє створювати інтерактивні елементи, анімації, змінювати вміст сторінок без їх перезавантаження, може маніпулювати об'єктами та подіями на веб-сторінці, змінюючи їх властивості.<br>
         Javascript - клієнтська мова програмування й виконується в браузері користувача, але в останні роки JavaScript також отримав можливість виконуватися на серверній стороні за допомогою середовищ, таких як Node.js чи подібних. </p>
         <button  class="btn btn-success"> JS теги  </button>
     </div>
 
-<table class="first_table" style="margin-top: -1207px">
+<table class="first_table" style="position:absolute; top: 162px">
     <tr>
         <th style="background: #e2efda; text-decoration-color: #4a7543;" > CSS довідник</th>
     </tr>
@@ -65,7 +67,7 @@
     </tr>
 </table>
 
- <table class="first_table" >
+ <table class="first_table" style="position:absolute; top: 450px">
     <tr>
         <th style="background: #fbf8e5; text-decoration-color:#a89671;"> HTML довідник</th>
     </tr>
@@ -81,7 +83,7 @@
      <br>
 
  </table> <br>
-  <table class="first_table">
+  <table class="first_table" style="position:absolute; top: 684px">
     <tr>
         <th style="background: #efdfde; text-decoration-color: #be8683;"> JS довідник</th>
     </tr>
@@ -91,14 +93,17 @@
   </table>
 <div class="graytwo-rectangle" style="background-color: #f1f1f1;">
     <ul>
-        <li class="lis"><a href="{% url 'home' %}"></a>Discord</li>
-         <p class="words"> Спільнота </p>
-        <p class="word"> Звʼязок  </p>
-        <li class="lik"> Формою </li>
-        <li class="lik1"> Через пошту</li>
-        <li class="lik2"> Максим:(066) 707-42-64 </li>
+        <li style="position: absolute;margin-top: 50px;right: 580px;"><a href="{% url 'home' %}"></a>Discord</li>
+         <p style="position: absolute;margin-top: 20px;right: 500px;"> Спільнота </p>
+         <p style="position: absolute;margin-top: 20px;right: 200px;"> Звʼязок  </p>
+        <li style="position: absolute;margin-top: 50px;right: 265px;"> Формою </li>
+        <li style="position: absolute;margin-top: 65px;right: 232px;"> Через пошту</li>
+        <li style="position: absolute;margin-top: 80px;right: 140px;"> Максим:(066) 707-42-64 </li>
     </ul>
-
-
 </div>
+<span>
+    <div>
+        <p class="o-rectangle" style="position:absolute; right: 10px; top: 480px; ">body {<br> background-color: lightblue;<br> }<br> h1 {<br> color: white; text-align: center;<br> }<br> p {<br> font-family: verdana; font-size: 20px;<br> }</p>
+    </div>
+</span>
 {% endblock %}
