@@ -4,7 +4,7 @@
 
 {% block content %}
 <aside class="whit-rec">
-     <p style="margin-left: 950px; position: absolute; top:440px;"> <b style="font-size: 25px;">CSS приклад:</b></p>
+     <p style="margin-left: 930px; position: absolute; top:420px;"> <b style="font-size: 25px;">CSS приклад:</b></p>
     <div class="gray-rectangle">
         <p style="line-height: 2; font-size: 14.5px" ><b style="font-size: 30px;">Український веб-довідник</b><br>
         Веб-довідник створено, щоб допомогти Вам здобути нові знання, а також ефективніше використовувати вже.<br>
@@ -15,19 +15,21 @@
         </p>
     </div>
 </aside>
-<div>
-    <p style="text-align: right;">  </p>
-    <div class="white-rectangle">
-        <p style="line-height: 2; font-size: 14.5px;"> <b style="font-size: 30px;"> CSS </b> <br>
-    Каскадні таблиці стилів (англ. Cascading Style Sheets - CSS). <br>
-    Мова для запису стильового оформлення.<br>
-    Колір тла, розмір літер та найрізноманітніші візуальні ефекти створюються за допомогою.
-    </p>
-    <button  class="btn btn-success"> CSS властивості  </button>
-    <button  class="btn btn-success"> CSS селектори   </button>
+<aside class="whit-rec">
+    <p style="margin-left: 930px; position: absolute; top:768px;"> <b style="font-size: 25px;">HTML приклад:</b></p>
+    <div>
+        <p style="text-align: right;">  </p>
+        <div class="white-rectangle">
+            <p style="line-height: 2; font-size: 14.5px;"> <b style="font-size: 30px;"> CSS </b> <br>
+        Каскадні таблиці стилів (англ. Cascading Style Sheets - CSS). <br>
+        Мова для запису стильового оформлення.<br>
+        Колір тла, розмір літер та найрізноманітніші візуальні ефекти створюються за допомогою.
+        </p>
+        <button  class="btn btn-success"> CSS властивості  </button>
+        <button  class="btn btn-success"> CSS селектори   </button>
+        </div>
     </div>
-</div>
-
+</aside>
 <hr style="margin-left: 250px; margin-top: 100px">
 
     <div class="white-rectangle">
@@ -42,13 +44,14 @@
     </div>
 
 <hr style="margin-left: 250px; margin-top: 100px">
-
-    <div class="white-rectangle"> <p style="font-size: 14.5px;"> <b style="font-size: 30px;" > JS </b> <br>
-        JavaScript (скорочено - JS) - це високорівнева мова програмування, яка використовується для надання динамічної поведінки веб-сторінкам. Дозволяє створювати інтерактивні елементи, анімації, змінювати вміст сторінок без їх перезавантаження, може маніпулювати об'єктами та подіями на веб-сторінці, змінюючи їх властивості.<br>
-        Javascript - клієнтська мова програмування й виконується в браузері користувача, але в останні роки JavaScript також отримав можливість виконуватися на серверній стороні за допомогою середовищ, таких як Node.js чи подібних. </p>
-        <button  class="btn btn-success"> JS теги  </button>
-    </div>
-
+<aside class="whit-rec">
+    <p style="margin-left: 930px; position: absolute; top:1120px;"> <b style="font-size: 25px;">JS приклад:</b></p>
+        <div class="white-rectangle"> <p style="font-size: 14.5px;"> <b style="font-size: 30px;" > JS </b> <br>
+            JavaScript (скорочено - JS) - це високорівнева мова програмування, яка використовується для надання динамічної поведінки веб-сторінкам. Дозволяє створювати інтерактивні елементи, анімації, змінювати вміст сторінок без їх перезавантаження, може маніпулювати об'єктами та подіями на веб-сторінці, змінюючи їх властивості.<br>
+            Javascript - клієнтська мова програмування й виконується в браузері користувача, але в останні роки JavaScript також отримав можливість виконуватися на серверній стороні за допомогою середовищ, таких як Node.js чи подібних. </p>
+            <button  class="btn btn-success"> JS теги  </button>
+         </div>
+</aside>
 <table class="first_table" style="position:absolute; top: 162px">
     <tr>
         <th style="background: #e2efda; text-decoration-color: #4a7543;" > CSS довідник</th>
@@ -103,7 +106,10 @@
 </div>
 <span>
     <div>
-        <p class="o-rectangle" style="position:absolute; right: 10px; top: 480px; ">body {<br> background-color: lightblue;<br> }<br> h1 {<br> color: white; text-align: center;<br> }<br> p {<br> font-family: verdana; font-size: 20px;<br> }</p>
+        <p class="o-rectangle" style="position:absolute; right: 20px; top: 480px; ">body {<br> background-color: lightblue;<br> }<br> h1 {<br> color: white; text-align: center;<br> }<br> p {<br> font-family: verdana; font-size: 20px;<br> }</p>
+        <p class="o-rectangle" style="position:absolute; right: 20px; top: 480px; "></p>
+        <p class="o-rectangle" style="position:absolute; right: 20px; top: 1190px; line-height: 1.5;"> function clickHandler(e) {<br>var element = document.getElementById('myElement');<br><br>element.innerHTML = 'Текст змінено після кліку';<br>}<br><br>var button = document.getElementById('myButton');<br><br>button.addEventListener('click', clickHandler);<br></p>
     </div>
 </span>
+
 {% endblock %}
