@@ -18,13 +18,16 @@
             <div class="black-rectangle">
                 <ul class="block">
                     <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
-                    <li><a href="{% url 'about' %}"><i class="fas fa-user"></i> CSS</a></li>
+                    <li><a href="{% url 'about' %}"><i class="fas fa-user"></i>CSS</a></li>
                     <li><a href="{% url 'contact' %}"><i class="fas fa-newspaper"></i> HTML</a></li>
+                    <li><a href="{% url 'js' %}">JS</a></li>
+                    <li><a href="{% url 'stat' %}">Статті</a></li>
+                    <li><a href="{% url 'news' %}">Новини</a></li>
                 </ul>
             </div>
     </aside>
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}  {% endblock %}
     </main>
 </body>
 </html>
