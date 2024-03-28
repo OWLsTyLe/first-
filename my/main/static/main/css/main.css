@@ -54,13 +54,14 @@ aside ul li:hover, aside ul a:hover{
     margin-left: 250px;
     margin-top: 20px;
     line-height: 2;
+    width: 500px;
 }
 .first_table{
     width: 15%;
     border-collapse: collapse;
     margin-left: 15px;
-    border-radius: 0px 0px 30px 30px;
     text-decoration-color: #be8683;
+    border-radius: 5px 5px 30px 30px;
 }
 .first_table th, .first_table td{
     padding: 15px;
@@ -69,36 +70,13 @@ aside ul li:hover, aside ul a:hover{
     margin-top: 100px;
 }
 .graytwo-rectangle{
-    margin-top: 600px;
+    margin-top: 20px;
     height:160px;
 }
-.words{
-    position: absolute;
-    top: 1450px;
-    right: 500px;
-}
-.word{
-    position: absolute;
-    top: 1450px;
-    right: 200px;
-}
-.lis{
-    position: absolute;
-    top: 1500px;
-    right: 580px;
-}
-.lik{
-    position: absolute;
-    top: 1500px;
-    right: 265px;
-}
-.lik1{
-    position: absolute;
-    top: 1515px;
-    right: 232px;
-}
-.lik2{
-    position: absolute;
-    top: 1530px;
-    right: 140px;
+.o-rectangle{
+    background-color: #f1f1f1;
+    border: 1.3px solid grey;
+    border-collapse: collapse;
+    width: 490px;
+    border-radius: 4px 4px 4px 4px;
 }
