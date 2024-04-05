@@ -7,5 +7,11 @@ urlpatterns = [
     path('contact', views.contact, name='contact'),
     path('js', views.js, name='js'),
     path('news', views.news, name='news'),
-    path('stat', views.stat, name='stat')
+    path('stat', views.stat, name='stat'),
+    path('cssv', views.cssvla, name='cssvlast'),
+    path('cssc', views.cssc, name='cssc'),
+    path('teg', views.teg, name='teg'),
+    path('pod', views.pod, name='pod'),
+    path('globall', views.globall, name='global'),
+    path('jst', views.jst, name='jst')
 ]
