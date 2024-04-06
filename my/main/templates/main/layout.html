@@ -13,18 +13,19 @@
 </head>
 <body>
     <aside>
-        <img src="" alt="">
-        <span class="logo"> </span>
-            <div class="black-rectangle">
-                <ul class="block">
-                    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
-                    <li><a href="{% url 'about' %}"><i class="fas fa-user"></i>CSS</a></li>
-                    <li><a href="{% url 'contact' %}"><i class="fas fa-newspaper"></i> HTML</a></li>
-                    <li><a href="{% url 'js' %}">JS</a></li>
-                    <li><a href="{% url 'stat' %}">Статті</a></li>
-                    <li><a href="{% url 'news' %}">Новини</a></li>
-                </ul>
-            </div>
+        <span class="logo">
+            <img src="{% static 'main/imd/IMG_1026.JPG' %}" alt="Logo">
+        </span>
+        <div class="black-rectangle">
+            <ul class="block">
+                <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
+                <li><a href="{% url 'about' %}"></i> СSS</a></li>
+                <li><a href="{% url 'contact' %}">HTML</a></li>
+                <li><a href="{% url 'js' %}">JS</a></li>
+                <li><a href="{% url 'stat' %}">Статті</a></li>
+                <li><a href="{% url 'news' %}">Новини</a></li>
+            </ul>
+        </div>
     </aside>
     <main>
         {% block content %}  {% endblock %}
