@@ -1,16 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %} my {% endblock %}
+{% block title %}Довідник по HTML тегам  {% endblock %}
 
 {% block content %}
-    <h1> Статті тестові  </h1>
+    <h1> Довідник по HTML тегам  </h1>
 
-        {% for el in ads %}
-            <div class="alert alert-warning">
-                <h3>{{ el.name_you }}</h3>
-                <p>{{ el.pud_text }}</p>
-                <a href="" class="btn btn-warning"> read all</a>
-            </div>
-        {% endfor %}
+
 
 {% endblock %}
