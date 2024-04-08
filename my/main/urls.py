@@ -12,4 +12,6 @@ urlpatterns = [
     path('teg', views.teg, name='teg'),
     path('pod', views.pod, name='pod'),
     path('globall', views.globall, name='global'),
+    path('create', views.create, name='create')
+
 ]
