@@ -1,82 +1,95 @@
-body{
+body {
     background: white;
 }
 
-aside ul .block{
+aside ul .block {
     width: 20%;
     height: 100vh;
-    display: flex;
     max-width: 100%;
-    color: black;
 }
-
 
 h3 {
     color: black;
     font-size: 50px;
     text-align: center;
-
 }
 
-aside ul {list-style: none;  display: flex;}
+aside ul {
+    list-style: none;
+    display: flex;
+}
+
 aside ul li a {
     color: white;
     margin-top: 20px;
-    transition: all .8s ease;
-    text-align: center;
-    padding-left: 80px;
-
+    text-align: left;
+    padding-left: 8px;
 }
-aside ul li:hover, aside ul a:hover{
+
+aside ul li:hover,
+aside ul a:hover {
     color: white;
     text-decoration: none;
-    transform: scale(1.06);
-
+    display: block;
+    background-color: black;
 }
-.alert-warning{
+
+.alert-warning {
     text-decoration: black;
     text-align: left;
     margin: 25px 30%;
     clear: both;
 }
+
 .black-rectangle {
     margin-top: 60px;
-    background-color: dimgrey;
+    background-color: dimgray; /* Змінено dimgrey на dimgray */
     padding: 9px;
+    box-sizing: border-box;
 }
-.gray-rectangle{
+
+.gray-rectangle {
     background-color: #f1f1f1;
-    margin-left: 250px;
+    margin-left: 20%; /* Змінено значення margin-left на відсоткове */
     margin-top: 20px;
 }
 
-.white-rectangle{
-    margin-left: 250px;
+.white-rectangle {
+    margin-left: 20%; /* Змінено значення margin-left на відсоткове */
     margin-top: 20px;
     line-height: 2;
     width: 500px;
 }
-.first_table{
+
+.first_table {
     width: 15%;
     border-collapse: collapse;
     margin-left: 15px;
     text-decoration-color: #be8683;
-    border-radius: 5px 5px 30px 30px;
+    border-radius: 5px; /* Виправлено помилку в border-radius */
 }
-.first_table th, .first_table td{
+
+.first_table th, .first_table td {
     padding: 15px;
     text-align: left;
-    border: 0.5px solid dimgrey;
+    border: 0.5px solid dimgray; /* Змінено dimgrey на dimgray */
     margin-top: 100px;
 }
-.graytwo-rectangle{
+
+.graytwo-rectangle {
     margin-top: 20px;
-    height:160px;
+    height: 160px;
 }
-.o-rectangle{
+
+.o-rectangle {
     background-color: #f1f1f1;
     border: 1.3px solid grey;
     border-collapse: collapse;
-    width: 490px;
-    border-radius: 4px 4px 4px 4px;
+    width: 480px;
+    border-radius: 4px; /* Виправлено помилку в border-radius */
+}
+
+.box {
+    background-image: url(../img/IMG_1026.JPG);
+    height: 100vh;
 }
