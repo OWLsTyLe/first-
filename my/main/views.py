@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Category
+from .forms import CategoryForm
 
 def index(request):
     return render(request, 'main/index.html')
@@ -24,4 +25,21 @@ def pod(request):
     return render(request, 'main/pod.html')
 def globall(request):
     return render(request, 'main/global.html')
+def create(request):
+    error = ''
+    if request.method == 'POST':
+        form = CategoryForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        else:
+            error = 'NO'
+
+    form = CategoryForm()
+    data = {
+        'form': form,
+        'error': error
+    }
+    return render(request, 'main/create.html', data)
+
 
