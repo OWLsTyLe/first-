@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Повідомлення{% endblock %}
+{% block content %} <br>
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.name_you}}<br>
+        {{form.pud_text}}<br>
+        {{form.pub_date}}<br>
+        <span> {{error}}</span>
+        <a><button class="btn btn-success" tepe="submit"> Відправити </button></a>
+
+    </form>
+</div>
+{% endblock %}
