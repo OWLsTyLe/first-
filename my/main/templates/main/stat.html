@@ -7,7 +7,7 @@
             <div class="alert alert-warning">
                 <h3>{{ el.name_you }}</h3>
                 <p>{{ el.pud_text }}</p>
-                <a href="" class="btn btn-warning"> read all</a>
+                <a href="{% url 'statti' el.id %}" class="btn btn-warning"> read all</a>
             </div>
         {% endfor %}
 {% endblock %}
