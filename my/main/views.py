@@ -1,6 +1,13 @@
 from django.shortcuts import render, redirect
 from .models import Category
 from .forms import CategoryForm
+from django.views.generic import DetailView
+
+class NewDetailView(DetailView):
+    model = Category
+    template_name = 'main/statti.html'
+    context_object_name = 'stat'
+
 
 def index(request):
     return render(request, 'main/index.html')
