@@ -14,12 +14,12 @@
 <body>
     <aside>
         <span class="logo">
-            <img src="{% static 'main/imd/IMG_1026.JPG' %}" alt="Logo">
+            <img src="{% static 'main/img/Знімок екрана 2024-04-13 о 14.39.30.png' %}" class="Logo">
         </span>
         <div class="black-rectangle">
             <ul class="block">
                 <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
-                <li><a href="{% url 'about' %}"></i> СSS</a></li>
+                <li><a href="{% url 'about' %}">CSS</a></li>
                 <li><a href="{% url 'contact' %}">HTML</a></li>
                 <li><a href="{% url 'js' %}">JS</a></li>
                 <li><a href="{% url 'stat' %}">Статті</a></li>
@@ -27,8 +27,7 @@
             </ul>
         </div>
     </aside>
-    <main>
-        {% block content %}  {% endblock %}
-    </main>
+
+    {% block content %}{% endblock %}
 </body>
 </html>
