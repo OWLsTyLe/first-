@@ -14,7 +14,7 @@
 <body>
     <aside>
         <span class="logo">
-            <img src="{% static 'main/img/Знімок екрана 2024-04-13 о 14.39.30.png' %}" class="Logo">
+            <a href="{% url 'home' %}"><img src="{% static 'main/img/Знімок екрана 2024-04-13 о 14.39.30.png' %}" class="Logo"></a>
         </span>
         <div class="black-rectangle">
             <ul class="block">
@@ -27,7 +27,6 @@
             </ul>
         </div>
     </aside>
-
-    {% block content %}{% endblock %}
+{%block content%}{% endblock %}
 </body>
 </html>
